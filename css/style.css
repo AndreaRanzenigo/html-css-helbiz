@@ -147,3 +147,45 @@ section .main-bottom p {
 section .main-bottom a {
   color: #fff;
 }
+
+section .final-main .left {
+  margin-top: 50px;
+  padding-top: 25px;
+  background: linear-gradient(to top, #41566a, #252f38);
+}
+
+section .final-main a, p, h3 {
+  color: #fff;
+}
+
+section .final-main .right {
+  height: 320px;
+  padding-top: 25px;
+  margin-top: 50px;
+  background-image: url(../img/cities.jpg);
+}
+
+main .social {
+  position: relative;
+  background-image: url("../img/social-banner.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+main .social .helbiz-family {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 70px;
+}
+
+main .social .helbiz-family h3 {
+  color: black;
+}
+
+main .social .helbiz-family i {
+  font-size: 25px;
+  padding: 10px 5px;
+}
