@@ -17,6 +17,7 @@ h1 {
 
 img {
   max-height: 200px;
+  padding-top: 20px;
 }
 
 a {
@@ -25,6 +26,10 @@ a {
 /* utilities*/
 .text-center {
   text-align: center;
+}
+
+.only-desktop {
+  display: none;
 }
 
 /* header */
@@ -58,20 +63,60 @@ main .top-main {
 /* main center */
 main section .main-center {
   position: relative;
+  margin-bottom: 200px;
   height: 300px;
   background-image: url("../img/helbiz-banner.jpg");
   background-size: cover;
   background-position: left center;
 }
 
-section .main-center .container {
-  position: absolute;
-  top: 400px;
+section .main-center .col-left,
+section .main-center .col-right {
+  margin-top: 330px;
 }
 
+section .main-center .col-left {
+  text-align: right;
+}
 
-section .main-center .container .iphone{
-  position: absolute;
-  top: -50px;
-  left: 50%;
+section .main-center .col-left .text {
+  display: inline-block;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .only-desktop {
+    display: block;
+  }
+
+  .only-desktop .iphone {
+    margin-top: 210px;
+    text-align: center;
+  }
+}
+
+/* main bottom */
+section .main-bottom {
+  height: 300px;
+  background-image: url("../img/scooter-bg.jpg");
+  background-size: cover;
+}
+
+section .main-bottom .text {
+  position: relative;
+  top: 70px;
+}
+
+section .main-bottom h3 {
+  color: #fff;
+  font-size: 35px;
+}
+
+section .main-bottom p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+section .main-bottom a {
+  color: #fff;
 }
