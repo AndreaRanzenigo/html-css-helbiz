@@ -111,6 +111,10 @@ section .main-center .col-left .text {
   text-align: left;
 }
 
+section .main-center .col-left .text h3 {
+  color: black;
+}
+
 @media screen and (min-width: 992px) {
   .only-desktop {
     display: block;
@@ -156,6 +160,7 @@ section .final-main .left {
 
 section .final-main a, p, h3 {
   color: #fff;
+  display: block;
 }
 
 section .final-main .right {
